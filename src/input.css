@@ -51,7 +51,7 @@ body{
 }
 
 .subheading-section{
-    @apply 2xl:text-lg text-base bg-orange-100 inline p-3 rounded
+    @apply 2xl:text-lg text-base bg-orange-200 inline p-3 rounded
 }
 
 .margin-section{
@@ -64,4 +64,8 @@ body{
 
 .myCard{
    @apply max-w-[250px] 2xl:max-w-[312px] border border-orangeku rounded-[20px] py-[50px] px-[30px] hover:bg-orangeku
+}
+
+.card-wrapper{
+   @apply max-w-[250px] 2xl:max-w-[312px]
 }
