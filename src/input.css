@@ -59,5 +59,9 @@ body{
 }
 
 .wrapper{
-    @apply container lg:flex 2xl:max-w-[1320px] lg:max-w-[1100px] px-5
+    @apply container 2xl:max-w-[1320px] lg:max-w-[1100px] px-5
+}
+
+.myCard{
+   @apply max-w-[250px] 2xl:max-w-[312px] border border-orangeku rounded-[20px] py-[50px] px-[30px] hover:bg-orangeku
 }
