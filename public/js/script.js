@@ -36,3 +36,29 @@ var swiper = new Swiper(".productLanding", {
 
     }
   });
+
+  var swiper = new Swiper(".myTesti", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+      },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+        
+      },
+    breakpoints: {
+        1024 : {
+            slidesPerView: 4,
+            spaceBetween: 30,
+    
+        },
+        500: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        }
+
+    }
+  });
