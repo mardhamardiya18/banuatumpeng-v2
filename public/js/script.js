@@ -62,3 +62,28 @@ var swiper = new Swiper(".productLanding", {
 
     }
   });
+
+  var swiper = new Swiper(".blogLanding", {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: true,
+    freeMode: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+        
+      },
+    breakpoints: {
+        1024 : {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            autoplay: false,
+            loop: false
+        },
+        500: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        }
+
+    }
+  });
