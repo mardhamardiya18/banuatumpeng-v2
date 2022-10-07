@@ -784,6 +784,10 @@ video {
   margin-top: 2rem;
 }
 
+.mt-\[45px\]{
+  margin-top: 45px;
+}
+
 .block{
   display: block;
 }
@@ -854,6 +858,14 @@ video {
 
 .max-w-\[400px\]{
   max-width: 400px;
+}
+
+.max-w-\[1120px\]{
+  max-width: 1120px;
+}
+
+.max-w-\[270px\]{
+  max-width: 270px;
 }
 
 .border-collapse{
@@ -1014,6 +1026,11 @@ video {
   border-top-right-radius: 50px;
 }
 
+.rounded-t-3xl{
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+
 .border{
   border-width: 1px;
 }
@@ -1142,6 +1159,11 @@ video {
 .bg-orangeku{
   --tw-bg-opacity: 1;
   background-color: rgb(236 172 93 / var(--tw-bg-opacity));
+}
+
+.bg-cream-1{
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 240 200 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\.\/public\/img\/bg-testi\.webp\'\)\]{
@@ -1290,6 +1312,11 @@ video {
   padding-bottom: 3px;
 }
 
+.py-\[190px\]{
+  padding-top: 190px;
+  padding-bottom: 190px;
+}
+
 .pr-4{
   padding-right: 1rem;
 }
@@ -1312,6 +1339,38 @@ video {
 
 .pb-12{
   padding-bottom: 3rem;
+}
+
+.pb-10{
+  padding-bottom: 2.5rem;
+}
+
+.pt-\[100px\]{
+  padding-top: 100px;
+}
+
+.pb-\[80px\]{
+  padding-bottom: 80px;
+}
+
+.pb-\[190px\]{
+  padding-bottom: 190px;
+}
+
+.pt-\[190px\]{
+  padding-top: 190px;
+}
+
+.pb-\[50px\]{
+  padding-bottom: 50px;
+}
+
+.pb-\[70px\]{
+  padding-bottom: 70px;
+}
+
+.pb-3{
+  padding-bottom: 0.75rem;
 }
 
 .text-center{
@@ -1353,6 +1412,11 @@ video {
 .text-lg{
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .font-bold{
@@ -1873,6 +1937,10 @@ body{
     margin-top: 50px;
   }
 
+  .md\:mt-0{
+    margin-top: 0px;
+  }
+
   .md\:h-\[85px\]{
     height: 85px;
   }
@@ -2048,5 +2116,10 @@ body{
   .\32xl\:py-\[155px\]{
     padding-top: 155px;
     padding-bottom: 155px;
+  }
+
+  .\32xl\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
