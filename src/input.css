@@ -51,7 +51,7 @@ body{
 }
 
 .subheading-section{
-    @apply 2xl:text-lg text-base bg-orange-200 inline p-3 rounded
+    @apply 2xl:text-lg text-sm bg-orange-200 inline p-3 rounded
 }
 
 .margin-section{
