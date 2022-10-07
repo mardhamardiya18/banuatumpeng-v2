@@ -3,7 +3,8 @@ module.exports = {
   content: [
     './public/**/*.{html,css,js}',
     './src/**/*.[html,css,js}',
-    './index.html'
+    './index.html',
+    './katalog.html'
   ],
   theme: {
     container :{

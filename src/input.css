@@ -77,3 +77,7 @@ body{
 .testi .bg-slider{
     background-image: url("../public/img/bg-testi.webp");
 }
+
+.ribbon-product{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 71%, 0 100%);
+}
