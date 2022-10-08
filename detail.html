@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./public/img/logo.webp" />
+
+    <!-- Flowbite -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css"
+    />
+
+    <!-- slider css (splide) -->
+    <link rel="stylesheet" href="./public/css/splide.min.css" />
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="public/css/output.css" />
+    <title>Banua Tumpeng | Produk Detail</title>
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <header>
+      <nav
+        class="navbar px-2 sm:px-4 py-3 md:py-5 fixed w-full z-20 top-0 left-0"
+      >
+        <div
+          class="container flex flex-wrap justify-between items-center mx-auto"
+        >
+          <a href="#" class="flex items-center">
+            <img
+              src="./public/img/logo.webp"
+              class="mr-3 w-[70px] h-[70px] md:w-[85px] md:h-[85px] logoNav"
+              alt="Banua Tumpeng"
+            />
+          </a>
+          <div class="flex lg:order-2">
+            <button type="button" class="btn-primary mr-3 !py-2 md:!py-3">
+              Hubungi Kami
+            </button>
+            <button
+              data-collapse-toggle="navbar-sticky"
+              type="button"
+              class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+              aria-controls="navbar-sticky"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-6 h-6"
+                aria-hidden="true"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div
+            class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
+            id="navbar-sticky"
+          >
+            <ul
+              class="menu-wrapper flex flex-col bg-cream-2 lg:bg-transparent p-4 mt-4 rounded-lg border border-gray-100 lg:flex-row lg:space-x-16 md:space-x-0 sm:space-x-10 lg:mt-0 md:text-sm md:font-medium md:border-0"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="active block py-2 text-blacku pr-4 pl-3 rounded lg:bg-transparent lg:p-0 nav-link"
+                  >Beranda
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pr-4 text-blacku pl-3 rounded hover:bg-cream-1 lg:hover:bg-transparent lg:p-0 nav-link"
+                  >Paket Lengkap</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pr-4 pl-3 text-blacku rounded hover:bg-cream-1 lg:hover:bg-transparent lg:p-0 nav-link"
+                  >Buat Pesanan Cepat</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pr-4 pl-3 text-blacku rounded hover:bg-cream-1 lg:hover:bg-transparent lg:p-0 nav-link"
+                  >Sosial Media</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Navbar End -->
+
+    <section>
+      <div class="wrapper">
+        <div class="margin-section lg:flex justify-between lg:gap-16">
+          <div class="gallery w-full lg:w-1/2">
+            <div id="main-carousel" class="splide mb-5 rounded-3xl">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide thumbnail__slide">
+                    <img
+                      src="./public/img/detail1.webp"
+                      class="w-full h-full object-cover"
+                      alt=""
+                    />
+                  </li>
+                  <li class="splide__slide thumbnail__slide">
+                    <img
+                      src="./public/img/detail2.webp"
+                      class="w-full h-full object-cover"
+                      alt=""
+                    />
+                  </li>
+                  <li class="splide__slide thumbnail__slide">
+                    <img
+                      src="./public/img/detail3.webp"
+                      class="w-full h-full object-cover"
+                      alt=""
+                    />
+                  </li>
+                  <li class="splide__slide thumbnail__slide">
+                    <img
+                      src="./public/img/detail4.webp"
+                      class="w-full h-full object-cover"
+                      alt=""
+                    />
+                  </li>
+                  <li class="splide__slide thumbnail__slide">
+                    <img
+                      src="./public/img/detail5.webp"
+                      class="w-full h-full object-cover"
+                      alt=""
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div id="thumbnail-carousel" class="splide rounded-3xl">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide thumbnail__slide">
+                    <img
+                      src="./public/img/detail1.webp"
+                      class="w-full h-full object-cover"
+                      alt=""
+                    />
+                  </li>
+                  <li class="splide__slide thumbnail__slide">
+                    <img
+                      src="./public/img/detail2.webp"
+                      class="w-full h-full object-cover"
+                      alt=""
+                    />
+                  </li>
+                  <li class="splide__slide thumbnail__slide">
+                    <img
+                      src="./public/img/detail3.webp"
+                      class="w-full h-full object-cover"
+                      alt=""
+                    />
+                  </li>
+                  <li class="splide__slide thumbnail__slide">
+                    <img
+                      src="./public/img/detail4.webp"
+                      class="w-full h-full object-cover"
+                      alt=""
+                    />
+                  </li>
+                  <li class="splide__slide thumbnail__slide">
+                    <img
+                      src="./public/img/detail5.webp"
+                      class="w-full h-full object-cover"
+                      alt=""
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="w-full lg:w-1/2 mt-9 lg:mt-0">
+            <!-- Title Product -->
+            <h1 class="text-xl lg:text-[30px] font-semibold">
+              Paket Tumpeng Reguler 2
+            </h1>
+
+            <!-- Breadcrumb Product -->
+            <nav class="flex mt-4" aria-label="Breadcrumb">
+              <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                <li class="inline-flex items-center">
+                  <a
+                    href="#"
+                    class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900"
+                  >
+                    <svg
+                      class="w-4 h-4 mr-2"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"
+                      ></path>
+                    </svg>
+                    Katalog
+                  </a>
+                </li>
+                <li>
+                  <div class="flex items-center">
+                    <svg
+                      class="w-6 h-6 text-gray-400"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <a
+                      href="#"
+                      class="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2"
+                      >Tumpeng Besar</a
+                    >
+                  </div>
+                </li>
+                <li aria-current="page">
+                  <div class="flex items-center">
+                    <svg
+                      class="w-6 h-6 text-gray-400"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <span
+                      class="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400"
+                      >Reguler 2</span
+                    >
+                  </div>
+                </li>
+              </ol>
+            </nav>
+
+            <!-- Recommend Product For Event -->
+            <div class="mt-6">
+              <p class="text-base lg:text-lg">Rekomendasi Untuk Acara</p>
+              <ul class="mt-2 flex gap-3 flex-wrap">
+                <li
+                  class="text-xs py-[10px] px-[15px] bg-marronku text-white rounded-full"
+                >
+                  Syukuran Perusahaan
+                </li>
+                <li
+                  class="text-xs py-[10px] px-[15px] bg-marronku text-white rounded-full"
+                >
+                  Syukuran Institusi
+                </li>
+                <li
+                  class="text-xs py-[10px] px-[15px] bg-marronku text-white rounded-full"
+                >
+                  Syukuran Pernikahan
+                </li>
+                <li
+                  class="text-xs py-[10px] px-[15px] bg-marronku text-white rounded-full"
+                >
+                  Syukuran Lamaran
+                </li>
+                <li
+                  class="text-xs py-[10px] px-[15px] bg-marronku text-white rounded-full"
+                >
+                  Acara besar lainnya
+                </li>
+              </ul>
+            </div>
+
+            <!-- Price Product -->
+            <div class="mt-9">
+              <p>Harga Paket</p>
+              <p class="text-3xl lg:text-[35px] font-bold text-marronku">
+                Rp 650.000
+              </p>
+            </div>
+
+            <div class="mt-10">
+              <a href="#" class="btn-primary block"
+                >Buat Pesanan Untuk Paket Ini</a
+              >
+              <a href="#" class="btn-secondary block mt-3"
+                >Tanya-Tanya Dulu Deh</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-cream-1 rounded-t-3xl pt-[100px]">
+      <div class="wrapper">
+        <div class="pb-[50px] flex justify-between flex-wrap">
+          <div class="max-w-[270px]">
+            <div class="flex items-center gap-2">
+              <img src="/public/img/logo.webp" alt="" />
+              <p class="font-bold text-xl text-marronku">
+                BANUA <br />
+                TUMPENG
+              </p>
+            </div>
+            <div class="mt-[45px]">
+              <a href="#" class="block">admin@banuatumpeng.com</a>
+              <a href="#" class="block mt-3">0851-5625-3408</a>
+            </div>
+            <div class="mt-[45px] flex items-center gap-2">
+              <a href="#"
+                ><svg
+                  width="50"
+                  height="50"
+                  viewBox="0 0 50 50"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M42 14.2497C36 4.99969 23.75 2.2497 14.25 7.99969C5 13.7497 2 26.2497 8 35.4997L8.5 36.2497L6.5 43.7497L14 41.7497L14.75 42.2497C18 43.9997 21.5 44.9997 25 44.9997C28.75 44.9997 32.5 43.9997 35.75 41.9997C45 35.9997 47.75 23.7497 42 14.2497ZM36.75 33.4997C35.75 34.9997 34.5 35.9997 32.75 36.2497C31.75 36.2497 30.5 36.7497 25.5 34.7497C21.25 32.7497 17.75 29.4997 15.25 25.7497C13.75 23.9997 13 21.7497 12.75 19.4997C12.75 17.4997 13.5 15.7497 14.75 14.4997C15.25 13.9997 15.75 13.7497 16.25 13.7497H17.5C18 13.7497 18.5 13.7497 18.75 14.7497C19.25 15.9997 20.5 18.9997 20.5 19.2497C20.75 19.4997 20.75 19.9997 20.5 20.2497C20.75 20.7497 20.5 21.2497 20.25 21.4997C20 21.7497 19.75 22.2497 19.5 22.4997C19 22.7497 18.75 23.2497 19 23.7497C20 25.2497 21.25 26.7497 22.5 27.9997C24 29.2497 25.5 30.2497 27.25 30.9997C27.75 31.2497 28.25 31.2497 28.5 30.7497C28.75 30.2497 30 28.9997 30.5 28.4997C31 27.9997 31.25 27.9997 31.75 28.2497L35.75 30.2497C36.25 30.4997 36.75 30.7497 37 30.9997C37.25 31.7497 37.25 32.7497 36.75 33.4997Z"
+                    fill="#ECAC5D"
+                  />
+                </svg>
+              </a>
+              <a href="#"
+                ><svg
+                  width="50"
+                  height="50"
+                  viewBox="0 0 50 50"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M25 18.4912C21.416 18.4912 18.4912 21.416 18.4912 25C18.4912 28.584 21.416 31.5088 25 31.5088C28.584 31.5088 31.5088 28.584 31.5088 25C31.5088 21.416 28.584 18.4912 25 18.4912ZM44.5215 25C44.5215 22.3047 44.5459 19.6338 44.3946 16.9433C44.2432 13.8183 43.5303 11.0449 41.2451 8.75975C38.9551 6.46971 36.1865 5.76171 33.0615 5.61034C30.3662 5.45897 27.6953 5.48339 25.0049 5.48339C22.3096 5.48339 19.6387 5.45897 16.9482 5.61034C13.8232 5.76171 11.0498 6.4746 8.76465 8.75975C6.47461 11.0498 5.7666 13.8183 5.61524 16.9433C5.46387 19.6387 5.48828 22.3096 5.48828 25C5.48828 27.6904 5.46387 30.3662 5.61524 33.0566C5.7666 36.1816 6.4795 38.9551 8.76465 41.2402C11.0547 43.5303 13.8232 44.2383 16.9482 44.3896C19.6436 44.541 22.3145 44.5166 25.0049 44.5166C27.7002 44.5166 30.3711 44.541 33.0615 44.3896C36.1865 44.2383 38.96 43.5254 41.2451 41.2402C43.5352 38.9502 44.2432 36.1816 44.3946 33.0566C44.5508 30.3662 44.5215 27.6953 44.5215 25ZM25 35.0146C19.458 35.0146 14.9854 30.542 14.9854 25C14.9854 19.458 19.458 14.9853 25 14.9853C30.542 14.9853 35.0147 19.458 35.0147 25C35.0147 30.542 30.542 35.0146 25 35.0146ZM35.4248 16.9141C34.1309 16.9141 33.086 15.8691 33.086 14.5752C33.086 13.2812 34.1309 12.2363 35.4248 12.2363C36.7188 12.2363 37.7637 13.2812 37.7637 14.5752C37.7641 14.8824 37.7038 15.1867 37.5864 15.4707C37.469 15.7546 37.2968 16.0126 37.0795 16.2299C36.8622 16.4471 36.6043 16.6194 36.3203 16.7368C36.0364 16.8542 35.7321 16.9144 35.4248 16.9141Z"
+                    fill="#ECAC5D"
+                  />
+                </svg>
+              </a>
+              <a href="#"
+                ><svg
+                  width="41"
+                  height="41"
+                  viewBox="0 0 41 41"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_89_69)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0 20.6145C0 30.8064 7.40221 39.2814 17.0833 41V26.1939H11.9583V20.5H17.0833V15.9439C17.0833 10.8189 20.3855 7.97279 25.0561 7.97279C26.5355 7.97279 28.1311 8.2 29.6105 8.42721V13.6667H26.9917C24.4855 13.6667 23.9167 14.9189 23.9167 16.5145V20.5H29.3833L28.4728 26.1939H23.9167V41C33.5978 39.2814 41 30.8081 41 20.6145C41 9.27625 31.775 0 20.5 0C9.225 0 0 9.27625 0 20.6145Z"
+                      fill="#ECAC5D"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_89_69">
+                      <rect width="41" height="41" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="max-w-[270px] mt-8 md:mt-0">
+            <h2 class="text-xl 2xl:text-3xl font-bold text-marronku pb-10">
+              Pelayanan
+            </h2>
+            <ul class="flex flex-col gap-3">
+              <li>Tumpeng Besar</li>
+              <li>Tumpeng Mini</li>
+              <li>Nasi Kotak</li>
+              <li>Box Bento</li>
+              <li>Prasmanan</li>
+            </ul>
+          </div>
+          <div class="max-w-[270px] mt-8 md:mt-0">
+            <h2 class="text-xl 2xl:text-3xl font-bold text-marronku pb-10">
+              Informasi
+            </h2>
+            <ul class="flex flex-col gap-3">
+              <li>Jam Kerja</li>
+              <li>Ketentuan Umum</li>
+              <li>Kontak</li>
+              <li>Cara Pesan</li>
+            </ul>
+          </div>
+          <div class="max-w-[270px] mt-8 lg:mt-0">
+            <h2 class="text-xl 2xl:text-3xl font-bold text-marronku pb-10">
+              Alamat
+            </h2>
+            <p>
+              Komp Putra Tunggal Mandiri Jl.H.Tanda Blok.D No.06 kel.Landasan
+              Ulin Tengah Kec.Liang Anggang Kota Banjarbaru 085156253408
+            </p>
+            <a href="#">Google Maps</a>
+          </div>
+        </div>
+        <p class="text-center pb-3">
+          ©2021 Banuatumpeng.com | All right reserved
+        </p>
+      </div>
+    </footer>
+
+    <!-- Flowbite -->
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+
+    <!-- Jquery -->
+    <script src="./public/js/jquery-3.6.1.min.js"></script>
+
+    <!-- slider css (splide) -->
+    <script src="./public/js/splide.min.js"></script>
+
+    <!-- My Script -->
+    <script src="./public/js/detail.js"></script>
+  </body>
+</html>

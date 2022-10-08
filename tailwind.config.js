@@ -4,7 +4,8 @@ module.exports = {
     './public/**/*.{html,css,js}',
     './src/**/*.[html,css,js}',
     './index.html',
-    './katalog.html'
+    './katalog.html',
+    './detail.html'
   ],
   theme: {
     container :{
