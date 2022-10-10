@@ -12,11 +12,8 @@
       href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css"
     />
 
-    <!-- Swiper -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
+    <!-- slider css (splide) -->
+    <link rel="stylesheet" href="./public/css/splide.min.css" />
 
     <!-- Style CSS -->
     <link rel="stylesheet" href="public/css/output.css" />
@@ -26,12 +23,12 @@
     <!-- Navbar Start -->
     <header>
       <nav
-        class="navbar px-2 sm:px-4 py-3 md:py-5 fixed w-full z-20 top-0 left-0"
+        class="navbar px-2 sm:px-4 py-3 md:py-5 fixed w-full z-20 top-0 left-0 transition duration-300 ease-in-out"
       >
         <div
           class="container flex flex-wrap justify-between items-center mx-auto"
         >
-          <a href="#" class="flex items-center">
+          <a href="index.html" class="flex items-center">
             <img
               src="./public/img/logo.webp"
               class="mr-3 w-[70px] h-[70px] md:w-[85px] md:h-[85px] logoNav"
@@ -109,222 +106,238 @@
 
     <section>
       <div class="wrapper">
-        <!-- Banner -->
-        <div class="swiper myBanner margin-section">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="./public/img/banner.webp" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./public/img/banner.webp" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./public/img/banner.webp" alt="" />
-            </div>
+        <div
+          id="sliderBanner"
+          class="splide margin-section"
+          aria-label="Basic Structure Example"
+        >
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide" data-splide-interval="1000">
+                <img src="./public/img/banner.webp" alt="" />
+              </li>
+              <li class="splide__slide" data-splide-interval="1000">
+                <img src="./public/img/banner.webp" alt="" />
+              </li>
+              <li class="splide__slide" data-splide-interval="1000">
+                <img src="./public/img/banner.webp" alt="" />
+              </li>
+            </ul>
           </div>
-          <div class="swiper-pagination"></div>
         </div>
 
         <!-- Produk Pilihan -->
         <div class="margin-section">
           <h1 class="heading-section">Pilihan Paket Untuk Anda</h1>
 
-          <!-- Swiper -->
-          <div class="swiper sliderPilihan mt-10 pb-[50px]">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div
-                  class="bg-white max-w-[280px] sm:max-w-[250px] 2xl:max-w-[312px] p-5 rounded-lg mx-auto sm:mx-0"
-                >
-                  <div class="w-full h-[200px] overflow-hidden rounded-lg">
-                    <img
-                      src="./public/img/tuminilanding.webp"
-                      class="hover:scale-110"
-                      alt=""
-                    />
-                  </div>
-                  <hr class="mt-5 border-2 border-[rgba(145, 31, 39, 0.1)]" />
-                  <h2 class="text-[22px] font-semibold text-marronku mt-[15px]">
-                    Tumini 1
-                  </h2>
-                  <a
-                    href="#"
-                    class="text-xs mt-3 inline-block bg-orangeku px-3 py-2 rounded-full text-white"
-                    >Tumpeng mini</a
+          <div
+            id="sliderPilihan"
+            class="splide mt-11"
+            aria-label="Basic Structure Example"
+          >
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div
+                    class="bg-white max-w-[280px] sm:max-w-[250px] 2xl:max-w-[312px] p-5 rounded-lg mx-auto sm:mx-0 hover:border hover:border-marronku transition delay-150"
                   >
-                  <p class="mt-5">
-                    Acara kecil namun berkesan indah paket ini cocok untuk itu
-                  </p>
-                  <div class="mt-5">
+                    <div class="w-full h-[200px] overflow-hidden rounded-lg">
+                      <img
+                        src="./public/img/tuminilanding.webp"
+                        class="hover:scale-110 transition delay-150"
+                        alt=""
+                      />
+                    </div>
+                    <hr class="mt-5 border-2 border-[rgba(145, 31, 39, 0.1)]" />
+                    <h2
+                      class="text-[22px] font-semibold text-marronku mt-[15px]"
+                    >
+                      Tumini 1
+                    </h2>
                     <a
                       href="#"
-                      class="flex items-center gap-1 text-orangeku text-lg"
-                      >Detail Paket
-                      <svg
-                        width="18"
-                        height="18"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M2.5 7.5H12.5M8.125 3.125L12.5 7.5L8.125 11.875"
-                          stroke="#ECAC5D"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </a>
+                      class="text-xs mt-3 inline-block bg-orangeku px-3 py-2 rounded-full text-white"
+                      >Tumpeng mini</a
+                    >
+                    <p class="mt-5">
+                      Acara kecil namun berkesan indah paket ini cocok untuk itu
+                    </p>
+                    <div class="mt-5">
+                      <a
+                        href="#"
+                        class="flex items-center gap-1 text-orangeku text-lg"
+                        >Detail Paket
+                        <svg
+                          width="18"
+                          height="18"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2.5 7.5H12.5M8.125 3.125L12.5 7.5L8.125 11.875"
+                            stroke="#ECAC5D"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div
-                  class="bg-white max-w-[280px] sm:max-w-[250px] 2xl:max-w-[312px] p-5 rounded-lg mx-auto sm:mx-0"
-                >
-                  <div class="w-full h-[200px] overflow-hidden rounded-lg">
-                    <img
-                      src="./public/img/tuminilanding.webp"
-                      class="hover:scale-110"
-                      alt=""
-                    />
-                  </div>
-                  <hr class="mt-5 border-2 border-[rgba(145, 31, 39, 0.1)]" />
-                  <h2 class="text-[22px] font-semibold text-marronku mt-[15px]">
-                    Tumini 1
-                  </h2>
-                  <a
-                    href="#"
-                    class="text-xs mt-3 inline-block bg-orangeku px-3 py-2 rounded-full text-white"
-                    >Tumpeng mini</a
+                </li>
+                <li class="splide__slide">
+                  <div
+                    class="bg-white max-w-[280px] sm:max-w-[250px] 2xl:max-w-[312px] p-5 rounded-lg mx-auto sm:mx-0 hover:border hover:border-marronku transition delay-150"
                   >
-                  <p class="mt-5">
-                    Acara kecil namun berkesan indah paket ini cocok untuk itu
-                  </p>
-                  <div class="mt-5">
+                    <div class="w-full h-[200px] overflow-hidden rounded-lg">
+                      <img
+                        src="./public/img/tuminilanding.webp"
+                        class="hover:scale-110 transition delay-150"
+                        alt=""
+                      />
+                    </div>
+                    <hr class="mt-5 border-2 border-[rgba(145, 31, 39, 0.1)]" />
+                    <h2
+                      class="text-[22px] font-semibold text-marronku mt-[15px]"
+                    >
+                      Tumini 1
+                    </h2>
                     <a
                       href="#"
-                      class="flex items-center gap-1 text-orangeku text-lg"
-                      >Detail Paket
-                      <svg
-                        width="18"
-                        height="18"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M2.5 7.5H12.5M8.125 3.125L12.5 7.5L8.125 11.875"
-                          stroke="#ECAC5D"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </a>
+                      class="text-xs mt-3 inline-block bg-orangeku px-3 py-2 rounded-full text-white"
+                      >Tumpeng mini</a
+                    >
+                    <p class="mt-5">
+                      Acara kecil namun berkesan indah paket ini cocok untuk itu
+                    </p>
+                    <div class="mt-5">
+                      <a
+                        href="#"
+                        class="flex items-center gap-1 text-orangeku text-lg"
+                        >Detail Paket
+                        <svg
+                          width="18"
+                          height="18"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2.5 7.5H12.5M8.125 3.125L12.5 7.5L8.125 11.875"
+                            stroke="#ECAC5D"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div
-                  class="bg-white p-5 rounded-lg max-w-[280px] sm:max-w-[250px] 2xl:max-w-[312px] mx-auto sm:mx-0"
-                >
-                  <div class="w-full h-[200px] overflow-hidden rounded-lg">
-                    <img
-                      src="./public/img/tuminilanding.webp"
-                      class="hover:scale-110"
-                      alt=""
-                    />
-                  </div>
-                  <hr class="mt-5 border-2 border-[rgba(145, 31, 39, 0.1)]" />
-                  <h2 class="text-[22px] font-semibold text-marronku mt-[15px]">
-                    Tumini 1
-                  </h2>
-                  <a
-                    href="#"
-                    class="text-xs mt-3 inline-block bg-orangeku px-3 py-2 rounded-full text-white"
-                    >Tumpeng mini</a
+                </li>
+                <li class="splide__slide">
+                  <div
+                    class="bg-white max-w-[280px] sm:max-w-[250px] 2xl:max-w-[312px] p-5 rounded-lg mx-auto sm:mx-0 hover:border hover:border-marronku transition delay-150"
                   >
-                  <p class="mt-5">
-                    Acara kecil namun berkesan indah paket ini cocok untuk itu
-                  </p>
-                  <div class="mt-5">
+                    <div class="w-full h-[200px] overflow-hidden rounded-lg">
+                      <img
+                        src="./public/img/tuminilanding.webp"
+                        class="hover:scale-110 transition delay-150"
+                        alt=""
+                      />
+                    </div>
+                    <hr class="mt-5 border-2 border-[rgba(145, 31, 39, 0.1)]" />
+                    <h2
+                      class="text-[22px] font-semibold text-marronku mt-[15px]"
+                    >
+                      Tumini 1
+                    </h2>
                     <a
                       href="#"
-                      class="flex items-center gap-1 text-orangeku text-lg"
-                      >Detail Paket
-                      <svg
-                        width="18"
-                        height="18"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M2.5 7.5H12.5M8.125 3.125L12.5 7.5L8.125 11.875"
-                          stroke="#ECAC5D"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </a>
+                      class="text-xs mt-3 inline-block bg-orangeku px-3 py-2 rounded-full text-white"
+                      >Tumpeng mini</a
+                    >
+                    <p class="mt-5">
+                      Acara kecil namun berkesan indah paket ini cocok untuk itu
+                    </p>
+                    <div class="mt-5">
+                      <a
+                        href="#"
+                        class="flex items-center gap-1 text-orangeku text-lg"
+                        >Detail Paket
+                        <svg
+                          width="18"
+                          height="18"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2.5 7.5H12.5M8.125 3.125L12.5 7.5L8.125 11.875"
+                            stroke="#ECAC5D"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div
-                  class="bg-white p-5 rounded-lg max-w-[280px] sm:max-w-[250px] 2xl:max-w-[312px] mx-auto sm:mx-0"
-                >
-                  <div class="w-full h-[200px] overflow-hidden rounded-lg">
-                    <img
-                      src="./public/img/tuminilanding.webp"
-                      class="hover:scale-110"
-                      alt=""
-                    />
-                  </div>
-                  <hr class="mt-5 border-2 border-[rgba(145, 31, 39, 0.1)]" />
-                  <h2 class="text-[22px] font-semibold text-marronku mt-[15px]">
-                    Tumini 1
-                  </h2>
-                  <a
-                    href="#"
-                    class="text-xs mt-3 inline-block bg-orangeku px-3 py-2 rounded-full text-white"
-                    >Tumpeng mini</a
+                </li>
+                <li class="splide__slide">
+                  <div
+                    class="bg-white max-w-[280px] sm:max-w-[250px] 2xl:max-w-[312px] p-5 rounded-lg mx-auto sm:mx-0 hover:border hover:border-marronku transition delay-150"
                   >
-                  <p class="mt-5">
-                    Acara kecil namun berkesan indah paket ini cocok untuk itu
-                  </p>
-                  <div class="mt-5">
+                    <div class="w-full h-[200px] overflow-hidden rounded-lg">
+                      <img
+                        src="./public/img/tuminilanding.webp"
+                        class="hover:scale-110 transition delay-150"
+                        alt=""
+                      />
+                    </div>
+                    <hr class="mt-5 border-2 border-[rgba(145, 31, 39, 0.1)]" />
+                    <h2
+                      class="text-[22px] font-semibold text-marronku mt-[15px]"
+                    >
+                      Tumini 1
+                    </h2>
                     <a
                       href="#"
-                      class="flex items-center gap-1 text-orangeku text-lg"
-                      >Detail Paket
-                      <svg
-                        width="18"
-                        height="18"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M2.5 7.5H12.5M8.125 3.125L12.5 7.5L8.125 11.875"
-                          stroke="#ECAC5D"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </a>
+                      class="text-xs mt-3 inline-block bg-orangeku px-3 py-2 rounded-full text-white"
+                      >Tumpeng mini</a
+                    >
+                    <p class="mt-5">
+                      Acara kecil namun berkesan indah paket ini cocok untuk itu
+                    </p>
+                    <div class="mt-5">
+                      <a
+                        href="#"
+                        class="flex items-center gap-1 text-orangeku text-lg"
+                        >Detail Paket
+                        <svg
+                          width="18"
+                          height="18"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2.5 7.5H12.5M8.125 3.125L12.5 7.5L8.125 11.875"
+                            stroke="#ECAC5D"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
                   </div>
-                </div>
-              </div>
+                </li>
+              </ul>
             </div>
-            <div class="swiper-pagination"></div>
           </div>
 
-          <div class="mt-[50px] text-center">
+          <div class="mt-[90px] text-center">
             <a href="#" class="btn-primary">Lihat Produk Lainnya</a>
           </div>
         </div>
@@ -335,16 +348,21 @@
       <div class="wrapper">
         <img src="./public/img/banner2.webp" alt="" />
 
-        <!-- Produk Pilihan -->
+        <!-- Produk Top Order -->
         <div class="mt-[100px]">
           <h1 class="heading-section">
             Orang lain sudah order berkali-kali paket ini!
           </h1>
+        </div>
 
-          <!-- Swiper -->
-          <div class="swiper sliderTop mt-10 pb-[50px]">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
+        <div
+          id="sliderTopOrder"
+          class="splide mt-11"
+          aria-label="Basic Structure Example"
+        >
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
                 <div
                   class="bg-white p-5 rounded-lg max-w-[280px] sm:max-w-[250px] 2xl:max-w-[312px] relative mx-auto sm:mx-0"
                 >
@@ -396,8 +414,8 @@
                     </a>
                   </div>
                 </div>
-              </div>
-              <div class="swiper-slide">
+              </li>
+              <li class="splide__slide">
                 <div
                   class="bg-white p-5 rounded-lg max-w-[280px] sm:max-w-[250px] 2xl:max-w-[312px] relative mx-auto sm:mx-0"
                 >
@@ -449,8 +467,8 @@
                     </a>
                   </div>
                 </div>
-              </div>
-              <div class="swiper-slide">
+              </li>
+              <li class="splide__slide">
                 <div
                   class="bg-white p-5 rounded-lg max-w-[280px] sm:max-w-[250px] 2xl:max-w-[312px] relative mx-auto sm:mx-0"
                 >
@@ -502,8 +520,8 @@
                     </a>
                   </div>
                 </div>
-              </div>
-              <div class="swiper-slide">
+              </li>
+              <li class="splide__slide">
                 <div
                   class="bg-white p-5 rounded-lg max-w-[280px] sm:max-w-[250px] 2xl:max-w-[312px] relative mx-auto sm:mx-0"
                 >
@@ -555,9 +573,8 @@
                     </a>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -569,223 +586,235 @@
         <div class="mt-[100px]">
           <h1 class="heading-section">Paket yang sering orang lihat</h1>
 
-          <!-- Swiper -->
-          <div class="swiper sliderPopuler mt-10 pb-[50px]">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div
-                  class="bg-white p-5 rounded-lg max-w-[280px] sm:max-w-[250px] 2xl:max-w-[312px] relative mx-auto sm:mx-0"
-                >
+          <div
+            id="sliderTopView"
+            class="splide mt-11"
+            aria-label="Basic Structure Example"
+          >
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
                   <div
-                    class="ribbon-product bg-yellow-500 font-bold shadow-lg text-slate-100 pt-5 text-center w-[70px] leading-tight h-[100px] absolute top-0 right-7 z-20"
+                    class="bg-white p-5 rounded-lg max-w-[280px] sm:max-w-[250px] 2xl:max-w-[312px] relative mx-auto sm:mx-0"
                   >
-                    Populer
-                  </div>
-                  <div class="w-full h-[200px] overflow-hidden rounded-lg">
-                    <img
-                      src="./public/img/tuminilanding.webp"
-                      class="hover:scale-110"
-                      alt=""
-                    />
-                  </div>
-                  <hr class="mt-5 border-2 border-[rgba(145, 31, 39, 0.1)]" />
-                  <h2 class="text-[22px] font-semibold text-marronku mt-[15px]">
-                    Tumini 1
-                  </h2>
-                  <a
-                    href="#"
-                    class="text-xs mt-3 inline-block bg-orangeku px-3 py-2 rounded-full text-white"
-                    >Tumpeng mini</a
-                  >
-                  <p class="mt-5">
-                    <span class="font-bold">265 Orang</span> sudah memesan paket
-                    ini. Rencanakan acara anda dan pesan sekarang
-                  </p>
-                  <div class="mt-5">
+                    <div
+                      class="ribbon-product bg-yellow-500 font-bold shadow-lg text-slate-100 pt-5 text-center w-[70px] leading-tight h-[100px] absolute top-0 right-7 z-20"
+                    >
+                      Populer
+                    </div>
+                    <div class="w-full h-[200px] overflow-hidden rounded-lg">
+                      <img
+                        src="./public/img/tuminilanding.webp"
+                        class="hover:scale-110"
+                        alt=""
+                      />
+                    </div>
+                    <hr class="mt-5 border-2 border-[rgba(145, 31, 39, 0.1)]" />
+                    <h2
+                      class="text-[22px] font-semibold text-marronku mt-[15px]"
+                    >
+                      Tumini 1
+                    </h2>
                     <a
                       href="#"
-                      class="flex items-center gap-1 text-orangeku text-lg"
-                      >Detail Paket
-                      <svg
-                        width="18"
-                        height="18"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M2.5 7.5H12.5M8.125 3.125L12.5 7.5L8.125 11.875"
-                          stroke="#ECAC5D"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </a>
+                      class="text-xs mt-3 inline-block bg-orangeku px-3 py-2 rounded-full text-white"
+                      >Tumpeng mini</a
+                    >
+                    <p class="mt-5">
+                      <span class="font-bold">265 Orang</span> sudah memesan
+                      paket ini. Rencanakan acara anda dan pesan sekarang
+                    </p>
+                    <div class="mt-5">
+                      <a
+                        href="#"
+                        class="flex items-center gap-1 text-orangeku text-lg"
+                        >Detail Paket
+                        <svg
+                          width="18"
+                          height="18"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2.5 7.5H12.5M8.125 3.125L12.5 7.5L8.125 11.875"
+                            stroke="#ECAC5D"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div
-                  class="bg-white p-5 rounded-lg max-w-[280px] sm:max-w-[250px] 2xl:max-w-[312px] relative mx-auto sm:mx-0"
-                >
+                </li>
+                <li class="splide__slide">
                   <div
-                    class="ribbon-product bg-yellow-500 font-bold shadow-lg text-slate-100 pt-5 text-center w-[70px] leading-tight h-[100px] absolute top-0 right-7 z-20"
+                    class="bg-white p-5 rounded-lg max-w-[280px] sm:max-w-[250px] 2xl:max-w-[312px] relative mx-auto sm:mx-0"
                   >
-                    Populer
-                  </div>
-                  <div class="w-full h-[200px] overflow-hidden rounded-lg">
-                    <img
-                      src="./public/img/tuminilanding.webp"
-                      class="hover:scale-110"
-                      alt=""
-                    />
-                  </div>
-                  <hr class="mt-5 border-2 border-[rgba(145, 31, 39, 0.1)]" />
-                  <h2 class="text-[22px] font-semibold text-marronku mt-[15px]">
-                    Tumini 1
-                  </h2>
-                  <a
-                    href="#"
-                    class="text-xs mt-3 inline-block bg-orangeku px-3 py-2 rounded-full text-white"
-                    >Tumpeng mini</a
-                  >
-                  <p class="mt-5">
-                    <span class="font-bold">265 Orang</span> sudah memesan paket
-                    ini. Rencanakan acara anda dan pesan sekarang
-                  </p>
-                  <div class="mt-5">
+                    <div
+                      class="ribbon-product bg-yellow-500 font-bold shadow-lg text-slate-100 pt-5 text-center w-[70px] leading-tight h-[100px] absolute top-0 right-7 z-20"
+                    >
+                      Populer
+                    </div>
+                    <div class="w-full h-[200px] overflow-hidden rounded-lg">
+                      <img
+                        src="./public/img/tuminilanding.webp"
+                        class="hover:scale-110"
+                        alt=""
+                      />
+                    </div>
+                    <hr class="mt-5 border-2 border-[rgba(145, 31, 39, 0.1)]" />
+                    <h2
+                      class="text-[22px] font-semibold text-marronku mt-[15px]"
+                    >
+                      Tumini 1
+                    </h2>
                     <a
                       href="#"
-                      class="flex items-center gap-1 text-orangeku text-lg"
-                      >Detail Paket
-                      <svg
-                        width="18"
-                        height="18"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M2.5 7.5H12.5M8.125 3.125L12.5 7.5L8.125 11.875"
-                          stroke="#ECAC5D"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </a>
+                      class="text-xs mt-3 inline-block bg-orangeku px-3 py-2 rounded-full text-white"
+                      >Tumpeng mini</a
+                    >
+                    <p class="mt-5">
+                      <span class="font-bold">265 Orang</span> sudah memesan
+                      paket ini. Rencanakan acara anda dan pesan sekarang
+                    </p>
+                    <div class="mt-5">
+                      <a
+                        href="#"
+                        class="flex items-center gap-1 text-orangeku text-lg"
+                        >Detail Paket
+                        <svg
+                          width="18"
+                          height="18"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2.5 7.5H12.5M8.125 3.125L12.5 7.5L8.125 11.875"
+                            stroke="#ECAC5D"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div
-                  class="bg-white p-5 rounded-lg max-w-[280px] sm:max-w-[250px] 2xl:max-w-[312px] relative mx-auto sm:mx-0"
-                >
+                </li>
+                <li class="splide__slide">
                   <div
-                    class="ribbon-product bg-yellow-500 font-bold shadow-lg text-slate-100 pt-5 text-center w-[70px] leading-tight h-[100px] absolute top-0 right-7 z-20"
+                    class="bg-white p-5 rounded-lg max-w-[280px] sm:max-w-[250px] 2xl:max-w-[312px] relative mx-auto sm:mx-0"
                   >
-                    Populer
-                  </div>
-                  <div class="w-full h-[200px] overflow-hidden rounded-lg">
-                    <img
-                      src="./public/img/tuminilanding.webp"
-                      class="hover:scale-110"
-                      alt=""
-                    />
-                  </div>
-                  <hr class="mt-5 border-2 border-[rgba(145, 31, 39, 0.1)]" />
-                  <h2 class="text-[22px] font-semibold text-marronku mt-[15px]">
-                    Tumini 1
-                  </h2>
-                  <a
-                    href="#"
-                    class="text-xs mt-3 inline-block bg-orangeku px-3 py-2 rounded-full text-white"
-                    >Tumpeng mini</a
-                  >
-                  <p class="mt-5">
-                    <span class="font-bold">265 Orang</span> sudah memesan paket
-                    ini. Rencanakan acara anda dan pesan sekarang
-                  </p>
-                  <div class="mt-5">
+                    <div
+                      class="ribbon-product bg-yellow-500 font-bold shadow-lg text-slate-100 pt-5 text-center w-[70px] leading-tight h-[100px] absolute top-0 right-7 z-20"
+                    >
+                      Populer
+                    </div>
+                    <div class="w-full h-[200px] overflow-hidden rounded-lg">
+                      <img
+                        src="./public/img/tuminilanding.webp"
+                        class="hover:scale-110"
+                        alt=""
+                      />
+                    </div>
+                    <hr class="mt-5 border-2 border-[rgba(145, 31, 39, 0.1)]" />
+                    <h2
+                      class="text-[22px] font-semibold text-marronku mt-[15px]"
+                    >
+                      Tumini 1
+                    </h2>
                     <a
                       href="#"
-                      class="flex items-center gap-1 text-orangeku text-lg"
-                      >Detail Paket
-                      <svg
-                        width="18"
-                        height="18"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M2.5 7.5H12.5M8.125 3.125L12.5 7.5L8.125 11.875"
-                          stroke="#ECAC5D"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </a>
+                      class="text-xs mt-3 inline-block bg-orangeku px-3 py-2 rounded-full text-white"
+                      >Tumpeng mini</a
+                    >
+                    <p class="mt-5">
+                      <span class="font-bold">265 Orang</span> sudah memesan
+                      paket ini. Rencanakan acara anda dan pesan sekarang
+                    </p>
+                    <div class="mt-5">
+                      <a
+                        href="#"
+                        class="flex items-center gap-1 text-orangeku text-lg"
+                        >Detail Paket
+                        <svg
+                          width="18"
+                          height="18"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2.5 7.5H12.5M8.125 3.125L12.5 7.5L8.125 11.875"
+                            stroke="#ECAC5D"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div
-                  class="bg-white p-5 rounded-lg max-w-[280px] sm:max-w-[250px] 2xl:max-w-[312px] relative mx-auto sm:mx-0"
-                >
+                </li>
+                <li class="splide__slide">
                   <div
-                    class="ribbon-product bg-yellow-500 font-bold shadow-lg text-slate-100 pt-5 text-center w-[70px] leading-tight h-[100px] absolute top-0 right-7 z-20"
+                    class="bg-white p-5 rounded-lg max-w-[280px] sm:max-w-[250px] 2xl:max-w-[312px] relative mx-auto sm:mx-0"
                   >
-                    Populer
-                  </div>
-                  <div class="w-full h-[200px] overflow-hidden rounded-lg">
-                    <img
-                      src="./public/img/tuminilanding.webp"
-                      class="hover:scale-110"
-                      alt=""
-                    />
-                  </div>
-                  <hr class="mt-5 border-2 border-[rgba(145, 31, 39, 0.1)]" />
-                  <h2 class="text-[22px] font-semibold text-marronku mt-[15px]">
-                    Tumini 1
-                  </h2>
-                  <a
-                    href="#"
-                    class="text-xs mt-3 inline-block bg-orangeku px-3 py-2 rounded-full text-white"
-                    >Tumpeng mini</a
-                  >
-                  <p class="mt-5">
-                    <span class="font-bold">265 Orang</span> sudah memesan paket
-                    ini. Rencanakan acara anda dan pesan sekarang
-                  </p>
-                  <div class="mt-5">
+                    <div
+                      class="ribbon-product bg-yellow-500 font-bold shadow-lg text-slate-100 pt-5 text-center w-[70px] leading-tight h-[100px] absolute top-0 right-7 z-20"
+                    >
+                      Populer
+                    </div>
+                    <div class="w-full h-[200px] overflow-hidden rounded-lg">
+                      <img
+                        src="./public/img/tuminilanding.webp"
+                        class="hover:scale-110"
+                        alt=""
+                      />
+                    </div>
+                    <hr class="mt-5 border-2 border-[rgba(145, 31, 39, 0.1)]" />
+                    <h2
+                      class="text-[22px] font-semibold text-marronku mt-[15px]"
+                    >
+                      Tumini 1
+                    </h2>
                     <a
                       href="#"
-                      class="flex items-center gap-1 text-orangeku text-lg"
-                      >Detail Paket
-                      <svg
-                        width="18"
-                        height="18"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M2.5 7.5H12.5M8.125 3.125L12.5 7.5L8.125 11.875"
-                          stroke="#ECAC5D"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </a>
+                      class="text-xs mt-3 inline-block bg-orangeku px-3 py-2 rounded-full text-white"
+                      >Tumpeng mini</a
+                    >
+                    <p class="mt-5">
+                      <span class="font-bold">265 Orang</span> sudah memesan
+                      paket ini. Rencanakan acara anda dan pesan sekarang
+                    </p>
+                    <div class="mt-5">
+                      <a
+                        href="#"
+                        class="flex items-center gap-1 text-orangeku text-lg"
+                        >Detail Paket
+                        <svg
+                          width="18"
+                          height="18"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2.5 7.5H12.5M8.125 3.125L12.5 7.5L8.125 11.875"
+                            stroke="#ECAC5D"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
                   </div>
-                </div>
-              </div>
+                </li>
+              </ul>
             </div>
-            <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>
@@ -907,8 +936,8 @@
     <!-- Jquery -->
     <script src="./public/js/jquery-3.6.1.min.js"></script>
 
-    <!-- Swiper -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- slider css (splide) -->
+    <script src="./public/js/splide.min.js"></script>
 
     <!-- My Script -->
     <script src="./public/js/katalog.js"></script>

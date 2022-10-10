@@ -12,115 +12,79 @@ $(document).ready(() => {
     })
 })
 
-  var swiper = new Swiper(".myBanner", {
-    spaceBetween: 0,
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-        
+document.addEventListener( 'DOMContentLoaded', function() {
+  const sliderPilihan = new Splide("#sliderPilihan", {
+    perPage: 4,
+    perMove: 1,
+    gap: '2rem',
+    autoWidth : true,
+    focus  : 'center',
+    pagination: false,
+    arrows: false,
+    breakpoints:{
+      500:{
+        perPage: 1,
+        pagination: true
       },
-      pagination: {
-        el: ".swiper-pagination",
-      },
-  });
-
-  var swiper = new Swiper(".sliderPilihan", {
-    slidesPerView: 1,
-    spaceBetween: 0,
-    freeMode: true,
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-        
-      },
-      pagination: {
-        el: ".swiper-pagination",
-      },
-    breakpoints: {
-        1500: {
-            slidesPerView: 4,
-            spaceBetween: 30,
-            autoplay: false,
-            loop: false,
-        },
-        1024 : {
-            slidesPerView: 4,
-            spaceBetween: 10,
-            autoplay: false,
-            loop: false,
-        },
-        500: {
-            slidesPerView: 3,
-            spaceBetween: 10,
-        }
-
+      1500:{
+        gap: '1rem',
+      }
     }
   });
 
-  var swiper = new Swiper(".sliderTop", {
-    slidesPerView: 1,
-    spaceBetween: 0,
-    freeMode: true,
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-        
+  const sliderTopOrder = new Splide("#sliderTopOrder", {
+    perPage: 4,
+    perMove: 1,
+    gap: '2rem',
+    autoWidth : true,
+    focus  : 'center',
+    pagination: false,
+    arrows: false,
+    breakpoints:{
+      500:{
+        perPage: 1,
+        pagination: true
       },
-      pagination: {
-        el: ".swiper-pagination",
-      },
-    breakpoints: {
-        1500: {
-            slidesPerView: 4,
-            spaceBetween: 30,
-            autoplay: false,
-            loop: false,
-        },
-        1024 : {
-            slidesPerView: 4,
-            spaceBetween: 10,
-            autoplay: false,
-            loop: false
-        },
-        500: {
-            slidesPerView: 3,
-            spaceBetween: 10,
-        }
-
+      1500:{
+        gap: '1rem',
+      }
     }
   });
 
-  var swiper = new Swiper(".sliderPopuler", {
-    slidesPerView: 1,
-    spaceBetween: 0,
-    freeMode: true,
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-        
+  const sliderTopView = new Splide("#sliderTopView", {
+    perPage: 4,
+    perMove: 1,
+    gap: '2rem',
+    autoWidth : true,
+    focus  : 'center',
+    pagination: false,
+    arrows: false,
+    breakpoints:{
+      500:{
+        perPage: 1,
+        pagination: true
       },
-      pagination: {
-        el: ".swiper-pagination",
-      },
-    breakpoints: {
-        1500: {
-            slidesPerView: 4,
-            spaceBetween: 30,
-            autoplay: false,
-            loop: false,
-        },
-        1024 : {
-            slidesPerView: 4,
-            spaceBetween: 10,
-            autoplay: false,
-            loop: false
-        },
-        500: {
-            slidesPerView: 3,
-            spaceBetween: 10,
-        }
-
+      1500:{
+        gap: '1rem',
+      }
     }
   });
+
+  const sliderBanner = new Splide("#sliderBanner", {
+    rewind: true,
+    gap: 20,
+    pagination: true,
+    arrows: false,
+    autoplay: true
+    
+  });
+
+ 
+  sliderPilihan.mount();
+  sliderTopOrder.mount();
+  sliderTopView.mount();
+  sliderBanner.mount();
+} );
+
 
   

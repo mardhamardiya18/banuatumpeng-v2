@@ -12,80 +12,69 @@ $(document).ready(() => {
     })
 })
 
-var swiper = new Swiper(".productLanding", {
-    slidesPerView: 1,
-    spaceBetween: 0,
-    loop: true,
-    freeMode: true,
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-        
-      },
-    breakpoints: {
-        1024 : {
-            slidesPerView: 4,
-            spaceBetween: 30,
-            autoplay: false,
-            loop: false
+document.addEventListener( 'DOMContentLoaded', function() {
+    const sliderProduk = new Splide("#sliderProduk", {
+      perPage: 4,
+      perMove: 1,
+      gap: '2rem',
+      autoWidth : true,
+      focus  : 'center',
+      pagination: false,
+      arrows: false,
+      breakpoints:{
+        500:{
+          perPage: 1,
+          pagination: true
         },
-        500: {
-            slidesPerView: 3,
-            spaceBetween: 20,
+        1500:{
+          gap: '1rem',
         }
+      }
+    });
 
-    }
-  });
-
-  var swiper = new Swiper(".myTesti", {
-    slidesPerView: 1,
-    spaceBetween: 20,
-    pagination: {
-        el: ".swiper-pagination",
-        dynamicBullets: true,
-      },
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
+    const sliderTesti = new Splide( '#sliderTesti', {
+        perPage: 4,
+        perMove: 1,
+        gap: '2rem',
+        autoWidth : true,
+        focus  : 'center',
+        pagination: false,
+        arrows: false,
+        breakpoints:{
+          500:{
+            perPage: 1,
+            pagination: true
+          },
+          1500:{
+            gap: '1rem',
+          }
+        }
         
-      },
-    breakpoints: {
-        1024 : {
-            slidesPerView: 4,
-            spaceBetween: 30,
-    
-        },
-        500: {
-            slidesPerView: 2,
-            spaceBetween: 20,
+      } );
+
+      const sliderBlog = new Splide("#sliderBlog", {
+        perPage: 4,
+        perMove: 1,
+        gap: '2rem',
+        autoWidth : true,
+        focus  : 'center',
+        pagination: false,
+        arrows: false,
+        breakpoints:{
+          500:{
+            perPage: 1,
+            pagination: true
+          },
+          1500:{
+            gap: '1rem',
+          }
         }
+      });
+  
+    sliderTesti.mount();
+    sliderProduk.mount();
+    sliderBlog.mount();
+  } );
 
-    }
-  });
-
-  var swiper = new Swiper(".blogLanding", {
-    slidesPerView: 1,
-    spaceBetween: 0,
-    loop: true,
-    freeMode: true,
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-        
-      },
-    breakpoints: {
-        1024 : {
-            slidesPerView: 4,
-            spaceBetween: 30,
-            autoplay: false,
-            loop: false
-        },
-        500: {
-            slidesPerView: 3,
-            spaceBetween: 20,
-        }
-
-    }
-  });
 
   
