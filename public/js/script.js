@@ -36,7 +36,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
         perPage: 4,
         perMove: 1,
         gap: '2rem',
-        autoWidth : true,
+       
         focus  : 'center',
         pagination: false,
         arrows: false,
